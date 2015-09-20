@@ -1,12 +1,17 @@
 {
-    "name": "alert/kohana_profiler_toolbar",
+    "name": "tscms/profilertoolbar",
     "description": "ProfilerToolbar it is another realization of the DebugToolbar written by Aaron Forsander, but has additional features",
+    "license": "MIT",
+    "type": "kohana-module",
     "require": {
-        "php": ">=5.3.0",
-        "kohana/core": "3.3.*@dev"
+        "php": ">=5.4",
+        "composer/installers": "1.*"
     },
-    "homepage": "http://alertdevelop.ru/projects/profilertoolbar",
-    "support": {
-        "issues": "https://github.com/Alert/profilertoolbar/issues"
-    }
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}/": [
+                "type:kohana-module"
+            ]
+        }        
+    }    
 }
